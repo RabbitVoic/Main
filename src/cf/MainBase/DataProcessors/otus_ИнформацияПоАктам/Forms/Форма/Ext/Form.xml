@@ -1,0 +1,427 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.15">
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+	<Events>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<Pages name="Группа1" id="77">
+			<ExtendedTooltip name="Группа1РасширеннаяПодсказка" id="78"/>
+			<ChildItems>
+				<Page name="Группа2" id="79">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Заявки к оформлению</v8:content>
+						</v8:item>
+					</Title>
+					<ExtendedTooltip name="Группа2РасширеннаяПодсказка" id="80"/>
+					<ChildItems>
+						<Table name="СписокЗаявок" id="1">
+							<AutoInsertNewRow>true</AutoInsertNewRow>
+							<EnableStartDrag>true</EnableStartDrag>
+							<EnableDrag>true</EnableDrag>
+							<DataPath>Объект.СписокЗаявок</DataPath>
+							<CommandSet>
+								<ExcludedCommand>Add</ExcludedCommand>
+								<ExcludedCommand>Copy</ExcludedCommand>
+								<ExcludedCommand>Delete</ExcludedCommand>
+							</CommandSet>
+							<RowFilter xsi:nil="true"/>
+							<ContextMenu name="СписокЗаявокКонтекстноеМеню" id="2"/>
+							<AutoCommandBar name="СписокЗаявокКоманднаяПанель" id="3">
+								<ChildItems>
+									<Button name="СписокЗаявокОформить" id="72">
+										<Type>CommandBarButton</Type>
+										<CommandName>Form.Command.Оформить</CommandName>
+										<ExtendedTooltip name="СписокЗаявокОформитьРасширеннаяПодсказка" id="73"/>
+									</Button>
+									<Button name="СписокЗаявокОбновить" id="122">
+										<Type>CommandBarButton</Type>
+										<CommandName>Form.Command.Обновить</CommandName>
+										<ExtendedTooltip name="СписокЗаявокОбновитьРасширеннаяПодсказка" id="123"/>
+									</Button>
+								</ChildItems>
+							</AutoCommandBar>
+							<ExtendedTooltip name="СписокЗаявокРасширеннаяПодсказка" id="4"/>
+							<SearchStringAddition name="СписокЗаявокСтрокаПоиска" id="5">
+								<AdditionSource>
+									<Item>СписокЗаявок</Item>
+									<Type>SearchStringRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="СписокЗаявокСтрокаПоискаКонтекстноеМеню" id="6"/>
+								<ExtendedTooltip name="СписокЗаявокСтрокаПоискаРасширеннаяПодсказка" id="7"/>
+							</SearchStringAddition>
+							<ViewStatusAddition name="СписокЗаявокСостояниеПросмотра" id="8">
+								<AdditionSource>
+									<Item>СписокЗаявок</Item>
+									<Type>ViewStatusRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="СписокЗаявокСостояниеПросмотраКонтекстноеМеню" id="9"/>
+								<ExtendedTooltip name="СписокЗаявокСостояниеПросмотраРасширеннаяПодсказка" id="10"/>
+							</ViewStatusAddition>
+							<SearchControlAddition name="СписокЗаявокУправлениеПоиском" id="11">
+								<AdditionSource>
+									<Item>СписокЗаявок</Item>
+									<Type>SearchControl</Type>
+								</AdditionSource>
+								<ContextMenu name="СписокЗаявокУправлениеПоискомКонтекстноеМеню" id="12"/>
+								<ExtendedTooltip name="СписокЗаявокУправлениеПоискомРасширеннаяПодсказка" id="13"/>
+							</SearchControlAddition>
+							<ChildItems>
+								<LabelField name="СписокЗаявокНомерСтроки" id="14">
+									<DataPath>Объект.СписокЗаявок.LineNumber</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="СписокЗаявокНомерСтрокиКонтекстноеМеню" id="15"/>
+									<ExtendedTooltip name="СписокЗаявокНомерСтрокиРасширеннаяПодсказка" id="16"/>
+								</LabelField>
+								<InputField name="СписокЗаявокЗаявка" id="17">
+									<DataPath>Объект.СписокЗаявок.Заявка</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="СписокЗаявокЗаявкаКонтекстноеМеню" id="18"/>
+									<ExtendedTooltip name="СписокЗаявокЗаявкаРасширеннаяПодсказка" id="19"/>
+								</InputField>
+								<InputField name="СписокЗаявокДоговор" id="20">
+									<DataPath>Объект.СписокЗаявок.Договор</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="СписокЗаявокДоговорКонтекстноеМеню" id="21"/>
+									<ExtendedTooltip name="СписокЗаявокДоговорРасширеннаяПодсказка" id="22"/>
+								</InputField>
+								<InputField name="СписокЗаявокКонтрагент" id="23">
+									<DataPath>Объект.СписокЗаявок.Контрагент</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="СписокЗаявокКонтрагентКонтекстноеМеню" id="24"/>
+									<ExtendedTooltip name="СписокЗаявокКонтрагентРасширеннаяПодсказка" id="25"/>
+								</InputField>
+								<InputField name="СписокЗаявокДатаПередачи" id="26">
+									<DataPath>Объект.СписокЗаявок.ДатаПередачи</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="СписокЗаявокДатаПередачиКонтекстноеМеню" id="27"/>
+									<ExtendedTooltip name="СписокЗаявокДатаПередачиРасширеннаяПодсказка" id="28"/>
+								</InputField>
+								<InputField name="СписокЗаявокДатаВозврата" id="29">
+									<DataPath>Объект.СписокЗаявок.ДатаВозврата</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="СписокЗаявокДатаВозвратаКонтекстноеМеню" id="30"/>
+									<ExtendedTooltip name="СписокЗаявокДатаВозвратаРасширеннаяПодсказка" id="31"/>
+								</InputField>
+								<CheckBoxField name="СписокЗаявокПометка" id="74">
+									<DataPath>Объект.СписокЗаявок.Пометка</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<CheckBoxType>Auto</CheckBoxType>
+									<ContextMenu name="СписокЗаявокПометкаКонтекстноеМеню" id="75"/>
+									<ExtendedTooltip name="СписокЗаявокПометкаРасширеннаяПодсказка" id="76"/>
+								</CheckBoxField>
+							</ChildItems>
+						</Table>
+					</ChildItems>
+				</Page>
+				<Page name="Группа3" id="81">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Ближажайший возврат</v8:content>
+						</v8:item>
+					</Title>
+					<ExtendedTooltip name="Группа3РасширеннаяПодсказка" id="82"/>
+					<ChildItems>
+						<Table name="БлижайшийСрокВозврата" id="83">
+							<UseAlternationRowColor>true</UseAlternationRowColor>
+							<EnableStartDrag>true</EnableStartDrag>
+							<DataPath>БлижайшийСрокВозврата</DataPath>
+							<RowPictureDataPath>~БлижайшийСрокВозврата.DefaultPicture</RowPictureDataPath>
+							<AutoRefresh>false</AutoRefresh>
+							<AutoRefreshPeriod>60</AutoRefreshPeriod>
+							<Period>
+								<v8:variant xsi:type="v8:StandardPeriodVariant">Custom</v8:variant>
+								<v8:startDate>0001-01-01T00:00:00</v8:startDate>
+								<v8:endDate>0001-01-01T00:00:00</v8:endDate>
+							</Period>
+							<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
+							<RestoreCurrentRow>false</RestoreCurrentRow>
+							<TopLevelParent xsi:nil="true"/>
+							<ShowRoot>true</ShowRoot>
+							<AllowRootChoice>false</AllowRootChoice>
+							<UpdateOnDataChange>Auto</UpdateOnDataChange>
+							<AllowGettingCurrentRowURL>true</AllowGettingCurrentRowURL>
+							<ContextMenu name="БлижайшийСрокВозвратаКонтекстноеМеню" id="84"/>
+							<AutoCommandBar name="БлижайшийСрокВозвратаКоманднаяПанель" id="85">
+								<ChildItems>
+									<Button name="БлижайшийСрокВозвратаОбновитьДинСписок" id="120">
+										<Type>CommandBarButton</Type>
+										<CommandName>Form.Command.ОбновитьДинСписок</CommandName>
+										<ExtendedTooltip name="БлижайшийСрокВозвратаОбновитьДинСписокРасширеннаяПодсказка" id="121"/>
+									</Button>
+								</ChildItems>
+							</AutoCommandBar>
+							<ExtendedTooltip name="БлижайшийСрокВозвратаРасширеннаяПодсказка" id="86"/>
+							<SearchStringAddition name="БлижайшийСрокВозвратаСтрокаПоиска" id="87">
+								<AdditionSource>
+									<Item>БлижайшийСрокВозврата</Item>
+									<Type>SearchStringRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="БлижайшийСрокВозвратаСтрокаПоискаКонтекстноеМеню" id="88"/>
+								<ExtendedTooltip name="БлижайшийСрокВозвратаСтрокаПоискаРасширеннаяПодсказка" id="89"/>
+							</SearchStringAddition>
+							<ViewStatusAddition name="БлижайшийСрокВозвратаСостояниеПросмотра" id="90">
+								<AdditionSource>
+									<Item>БлижайшийСрокВозврата</Item>
+									<Type>ViewStatusRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="БлижайшийСрокВозвратаСостояниеПросмотраКонтекстноеМеню" id="91"/>
+								<ExtendedTooltip name="БлижайшийСрокВозвратаСостояниеПросмотраРасширеннаяПодсказка" id="92"/>
+							</ViewStatusAddition>
+							<SearchControlAddition name="БлижайшийСрокВозвратаУправлениеПоиском" id="93">
+								<AdditionSource>
+									<Item>БлижайшийСрокВозврата</Item>
+									<Type>SearchControl</Type>
+								</AdditionSource>
+								<ContextMenu name="БлижайшийСрокВозвратаУправлениеПоискомКонтекстноеМеню" id="94"/>
+								<ExtendedTooltip name="БлижайшийСрокВозвратаУправлениеПоискомРасширеннаяПодсказка" id="95"/>
+							</SearchControlAddition>
+							<ChildItems>
+								<LabelField name="БлижайшийСрокВозвратаАктПередачи" id="96">
+									<DataPath>БлижайшийСрокВозврата.АктПередачи</DataPath>
+									<ContextMenu name="БлижайшийСрокВозвратаАктПередачиКонтекстноеМеню" id="97"/>
+									<ExtendedTooltip name="БлижайшийСрокВозвратаАктПередачиРасширеннаяПодсказка" id="98"/>
+								</LabelField>
+								<LabelField name="БлижайшийСрокВозвратаДатаПередачи" id="102">
+									<DataPath>БлижайшийСрокВозврата.ДатаПередачи</DataPath>
+									<ContextMenu name="БлижайшийСрокВозвратаДатаПередачиКонтекстноеМеню" id="103"/>
+									<ExtendedTooltip name="БлижайшийСрокВозвратаДатаПередачиРасширеннаяПодсказка" id="104"/>
+								</LabelField>
+								<LabelField name="БлижайшийСрокВозвратаДатаВозврата" id="99">
+									<DataPath>БлижайшийСрокВозврата.ДатаВозврата</DataPath>
+									<ContextMenu name="БлижайшийСрокВозвратаДатаВозвратаКонтекстноеМеню" id="100"/>
+									<ExtendedTooltip name="БлижайшийСрокВозвратаДатаВозвратаРасширеннаяПодсказка" id="101"/>
+								</LabelField>
+								<LabelField name="БлижайшийСрокВозвратаОстатокДней" id="117">
+									<DataPath>БлижайшийСрокВозврата.ОстатокДней</DataPath>
+									<ContextMenu name="БлижайшийСрокВозвратаОстатокДнейКонтекстноеМеню" id="118"/>
+									<ExtendedTooltip name="БлижайшийСрокВозвратаОстатокДнейРасширеннаяПодсказка" id="119"/>
+								</LabelField>
+								<LabelField name="БлижайшийСрокВозвратаДоговор" id="105">
+									<DataPath>БлижайшийСрокВозврата.Договор</DataPath>
+									<ContextMenu name="БлижайшийСрокВозвратаДоговорКонтекстноеМеню" id="106"/>
+									<ExtendedTooltip name="БлижайшийСрокВозвратаДоговорРасширеннаяПодсказка" id="107"/>
+								</LabelField>
+								<LabelField name="БлижайшийСрокВозвратаКонтрагент" id="108">
+									<DataPath>БлижайшийСрокВозврата.Контрагент</DataPath>
+									<ContextMenu name="БлижайшийСрокВозвратаКонтрагентКонтекстноеМеню" id="109"/>
+									<ExtendedTooltip name="БлижайшийСрокВозвратаКонтрагентРасширеннаяПодсказка" id="110"/>
+								</LabelField>
+								<LabelField name="БлижайшийСрокВозвратаТелефон" id="111">
+									<DataPath>БлижайшийСрокВозврата.Телефон</DataPath>
+									<ContextMenu name="БлижайшийСрокВозвратаТелефонКонтекстноеМеню" id="112"/>
+									<ExtendedTooltip name="БлижайшийСрокВозвратаТелефонРасширеннаяПодсказка" id="113"/>
+								</LabelField>
+								<LabelField name="БлижайшийСрокВозвратаЭлектроннаяПочта" id="114">
+									<DataPath>БлижайшийСрокВозврата.ЭлектроннаяПочта</DataPath>
+									<ContextMenu name="БлижайшийСрокВозвратаЭлектроннаяПочтаКонтекстноеМеню" id="115"/>
+									<ExtendedTooltip name="БлижайшийСрокВозвратаЭлектроннаяПочтаРасширеннаяПодсказка" id="116"/>
+								</LabelField>
+							</ChildItems>
+						</Table>
+					</ChildItems>
+				</Page>
+			</ChildItems>
+		</Pages>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:DataProcessorObject.otus_ИнформацияПоАктам</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+		</Attribute>
+		<Attribute name="БлижайшийСрокВозврата" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Ближайший срок возврата</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:DynamicList</v8:Type>
+			</Type>
+			<Settings xsi:type="DynamicList">
+				<ManualQuery>true</ManualQuery>
+				<DynamicDataRead>false</DynamicDataRead>
+				<QueryText>ВЫБРАТЬ
+	otus_АктПередачиТовара.Ссылка КАК АктПередачи,
+	otus_АктПередачиТовара.Контрагент КАК Контрагент,
+	otus_АктПередачиТовара.Договор КАК Договор,
+	otus_АктПередачиТовара.ДатаПередачи КАК ДатаПередачи,
+	otus_АктПередачиТовара.ДатаВозврата КАК ДатаВозврата,
+	Контрагенты.Телефон КАК Телефон,
+	Контрагенты.ЭлектроннаяПочта КАК ЭлектроннаяПочта,
+	otus_АктПередачиТовара.Дата КАК ДатаАкта,
+	&amp;ТекущаяДата КАК ТекущаяДата
+ПОМЕСТИТЬ вт_Акт
+ИЗ
+	Документ.otus_АктПередачиТовара КАК otus_АктПередачиТовара
+		ЛЕВОЕ СОЕДИНЕНИЕ Справочник.Контрагенты КАК Контрагенты
+		ПО otus_АктПередачиТовара.Контрагент = Контрагенты.Ссылка
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ
+	вт_Акт.АктПередачи КАК АктПередачи,
+	вт_Акт.Контрагент КАК Контрагент,
+	вт_Акт.Договор КАК Договор,
+	вт_Акт.ДатаПередачи КАК ДатаПередачи,
+	вт_Акт.ДатаВозврата КАК ДатаВозврата,
+	вт_Акт.Телефон КАК Телефон,
+	вт_Акт.ЭлектроннаяПочта КАК ЭлектроннаяПочта,
+	вт_Акт.ТекущаяДата КАК ТекущаяДата,
+	РАЗНОСТЬДАТ(вт_Акт.ТекущаяДата, вт_Акт.ДатаВозврата, ДЕНЬ) КАК Разность
+ПОМЕСТИТЬ вт_Разность
+ИЗ
+	вт_Акт КАК вт_Акт
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ
+	вт_Разность.АктПередачи КАК АктПередачи,
+	вт_Разность.Контрагент КАК Контрагент,
+	вт_Разность.Договор КАК Договор,
+	вт_Разность.ДатаПередачи КАК ДатаПередачи,
+	вт_Разность.ДатаВозврата КАК ДатаВозврата,
+	вт_Разность.Телефон КАК Телефон,
+	вт_Разность.ЭлектроннаяПочта КАК ЭлектроннаяПочта,
+	вт_Разность.Разность КАК ОстатокДней
+ИЗ
+	вт_Разность КАК вт_Разность
+ГДЕ
+	вт_Разность.Разность &lt; 5
+	И вт_Разность.Разность &gt; 0</QueryText>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>АктПередачи</dcssch:dataPath>
+					<dcssch:field>АктПередачи</dcssch:field>
+					<dcssch:title xsi:type="v8:LocalStringType">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Акт передачи</v8:content>
+						</v8:item>
+					</dcssch:title>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>Контрагент</dcssch:dataPath>
+					<dcssch:field>Контрагент</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>ДатаПередачи</dcssch:dataPath>
+					<dcssch:field>ДатаПередачи</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>Договор</dcssch:dataPath>
+					<dcssch:field>Договор</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>ДатаВозврата</dcssch:dataPath>
+					<dcssch:field>ДатаВозврата</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>ЭлектроннаяПочта</dcssch:dataPath>
+					<dcssch:field>ЭлектроннаяПочта</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>Телефон</dcssch:dataPath>
+					<dcssch:field>Телефон</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>ОстатокДней</dcssch:dataPath>
+					<dcssch:field>ОстатокДней</dcssch:field>
+					<dcssch:title xsi:type="v8:LocalStringType">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Остаток дней</v8:content>
+						</v8:item>
+					</dcssch:title>
+				</Field>
+				<Parameter>
+					<dcssch:name>ТекущаяДата</dcssch:name>
+					<dcssch:title xsi:type="v8:LocalStringType">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Текущая дата</v8:content>
+						</v8:item>
+					</dcssch:title>
+					<dcssch:valueType>
+						<v8:Type>xs:dateTime</v8:Type>
+						<v8:DateQualifiers>
+							<v8:DateFractions>DateTime</v8:DateFractions>
+						</v8:DateQualifiers>
+					</dcssch:valueType>
+					<dcssch:value xsi:nil="true"/>
+					<dcssch:useRestriction>true</dcssch:useRestriction>
+					<dcssch:expression>ТекущаяДата()</dcssch:expression>
+					<dcssch:availableAsField>false</dcssch:availableAsField>
+				</Parameter>
+				<ListSettings>
+					<dcsset:filter>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>dfcece9d-5077-440b-b6b3-45a5cb4538eb</dcsset:userSettingID>
+					</dcsset:filter>
+					<dcsset:order>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>88619765-ccb3-46c6-ac52-38e9c992ebd4</dcsset:userSettingID>
+					</dcsset:order>
+					<dcsset:conditionalAppearance>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>b75fecce-942b-4aed-abc9-e6a02e460fb3</dcsset:userSettingID>
+					</dcsset:conditionalAppearance>
+					<dcsset:itemsViewMode>Normal</dcsset:itemsViewMode>
+					<dcsset:itemsUserSettingID>911b6018-f537-43e8-a417-da56b22f9aec</dcsset:itemsUserSettingID>
+				</ListSettings>
+			</Settings>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="Оформить" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Оформить</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Оформить</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>Оформить</Action>
+		</Command>
+		<Command name="Обновить" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Обновить</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Обновить</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>Обновить</Action>
+		</Command>
+		<Command name="ОбновитьДинСписок" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Обновить</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Обновить дин список</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ОбновитьДинСписок</Action>
+		</Command>
+	</Commands>
+</Form>

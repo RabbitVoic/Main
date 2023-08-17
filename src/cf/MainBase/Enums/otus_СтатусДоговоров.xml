@@ -1,0 +1,67 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.15">
+	<Enum uuid="756eeb8b-792e-49a4-a9c1-ba87bb2553c6">
+		<InternalInfo>
+			<xr:GeneratedType name="EnumRef.otus_СтатусДоговоров" category="Ref">
+				<xr:TypeId>c9c4b916-6e4f-4212-9536-64cd8da813e6</xr:TypeId>
+				<xr:ValueId>da17300b-1f24-41ed-946b-cfa67d6f75a9</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="EnumManager.otus_СтатусДоговоров" category="Manager">
+				<xr:TypeId>93ccab56-b10f-4335-a25c-723e9e415fdc</xr:TypeId>
+				<xr:ValueId>5e122779-e687-409e-883b-dd579d2cb17f</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="EnumList.otus_СтатусДоговоров" category="List">
+				<xr:TypeId>e7805896-b169-4619-9a12-be3dbf158a32</xr:TypeId>
+				<xr:ValueId>8b5d911e-ece5-41f8-86ac-74d53aea4fc4</xr:ValueId>
+			</xr:GeneratedType>
+		</InternalInfo>
+		<Properties>
+			<Name>otus_СтатусДоговоров</Name>
+			<Synonym>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Otus статус договоров</v8:content>
+				</v8:item>
+			</Synonym>
+			<Comment/>
+			<UseStandardCommands>false</UseStandardCommands>
+			<Characteristics/>
+			<QuickChoice>true</QuickChoice>
+			<ChoiceMode>BothWays</ChoiceMode>
+			<DefaultListForm/>
+			<DefaultChoiceForm/>
+			<AuxiliaryListForm/>
+			<AuxiliaryChoiceForm/>
+			<ListPresentation/>
+			<ExtendedListPresentation/>
+			<Explanation/>
+			<ChoiceHistoryOnInput>Auto</ChoiceHistoryOnInput>
+		</Properties>
+		<ChildObjects>
+			<EnumValue uuid="59fe8ba7-2376-4e19-9fe8-eae58342abf2">
+				<Properties>
+					<Name>Действует</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Действует</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="da5f6b06-0396-43a0-848f-c2bd507f1a34">
+				<Properties>
+					<Name>Закрыт</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Закрыт</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+				</Properties>
+			</EnumValue>
+		</ChildObjects>
+	</Enum>
+</MetaDataObject>

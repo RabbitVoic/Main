@@ -1,0 +1,56 @@
+﻿<xs:schema xmlns:tns="http://rest_rmq" xmlns:xs="http://www.w3.org/2001/XMLSchema" targetNamespace="http://rest_rmq" attributeFormDefault="unqualified" elementFormDefault="qualified">
+	<xs:simpleType name="ackmode_type">
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="ack_requeue_true"/>
+			<xs:enumeration value="reject_requeue_true"/>
+			<xs:enumeration value="ack_requeue_false"/>
+			<xs:enumeration value="reject_requeue_false"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:complexType name="collection_messages_in">
+		<xs:sequence>
+			<xs:element name="message" type="tns:message_in" minOccurs="0" maxOccurs="unbounded"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:simpleType name="encoding_type">
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="auto"/>
+			<xs:enumeration value="base64"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:complexType name="message_in">
+		<xs:sequence>
+			<xs:element name="payload_bytes" type="xs:integer"/>
+			<xs:element name="redelivered" type="xs:boolean"/>
+			<xs:element name="exchange" type="xs:string"/>
+			<xs:element name="routing_key" type="xs:string"/>
+			<xs:element name="message_count" type="xs:integer"/>
+			<xs:element name="properties" type="tns:message_properties"/>
+			<xs:element name="payload" type="xs:string"/>
+			<xs:element name="payload_encoding" type="tns:payload_encoding_type"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="message_out">
+		<xs:sequence>
+			<xs:element name="properties" type="tns:message_properties"/>
+			<xs:element name="routing_key" type="xs:string" nillable="true"/>
+			<xs:element name="payload" type="xs:string"/>
+			<xs:element name="payload_encoding" type="tns:payload_encoding_type"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="message_properties"/>
+	<xs:complexType name="messages_request">
+		<xs:sequence>
+			<xs:element name="count" type="xs:integer"/>
+			<xs:element name="ackmode" type="tns:ackmode_type"/>
+			<xs:element name="encoding" type="tns:encoding_type"/>
+			<xs:element name="truncate" type="xs:integer" minOccurs="0"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:simpleType name="payload_encoding_type">
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="string"/>
+			<xs:enumeration value="base64"/>
+		</xs:restriction>
+	</xs:simpleType>
+</xs:schema>

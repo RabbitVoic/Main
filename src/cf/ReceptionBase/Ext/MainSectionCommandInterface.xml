@@ -1,0 +1,105 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<CommandInterface xmlns="http://v8.1c.ru/8.3/xcf/extrnprops" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.15">
+	<CommandsVisibility>
+		<Command name="0:465028ef-ab50-4508-b3ba-c29202551673">
+			<Visibility>
+				<xr:Common>true</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="0:40cc851d-f17c-4c55-bdf9-7f515d434425">
+			<Visibility>
+				<xr:Common>true</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="0:e718af75-1653-4321-aa29-30ac89cada0a">
+			<Visibility>
+				<xr:Common>true</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="0:5a77ed34-389a-45e7-85f4-1a2a7b95fd80">
+			<Visibility>
+				<xr:Common>true</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="0:0999ef48-b136-42b4-bb78-076511dac107">
+			<Visibility>
+				<xr:Common>true</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="0:677e13a7-d382-4862-a616-2c845e6fd734">
+			<Visibility>
+				<xr:Common>true</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="CommonCommand.БотОфисМенеджер">
+			<Visibility>
+				<xr:Common>true</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="0:96ef0e75-a210-425d-86d1-beb68cdcf5b1">
+			<Visibility>
+				<xr:Common>true</xr:Common>
+			</Visibility>
+		</Command>
+	</CommandsVisibility>
+	<CommandsPlacement>
+		<Command name="0:465028ef-ab50-4508-b3ba-c29202551673">
+			<CommandGroup>NavigationPanelOrdinary</CommandGroup>
+			<Placement>Manual</Placement>
+		</Command>
+		<Command name="0:40cc851d-f17c-4c55-bdf9-7f515d434425">
+			<CommandGroup>NavigationPanelOrdinary</CommandGroup>
+			<Placement>Manual</Placement>
+		</Command>
+		<Command name="0:e718af75-1653-4321-aa29-30ac89cada0a">
+			<CommandGroup>NavigationPanelOrdinary</CommandGroup>
+			<Placement>Manual</Placement>
+		</Command>
+		<Command name="0:5a77ed34-389a-45e7-85f4-1a2a7b95fd80">
+			<CommandGroup>NavigationPanelOrdinary</CommandGroup>
+			<Placement>Manual</Placement>
+		</Command>
+		<Command name="0:0999ef48-b136-42b4-bb78-076511dac107">
+			<CommandGroup>NavigationPanelOrdinary</CommandGroup>
+			<Placement>Manual</Placement>
+		</Command>
+		<Command name="0:677e13a7-d382-4862-a616-2c845e6fd734">
+			<CommandGroup>NavigationPanelOrdinary</CommandGroup>
+			<Placement>Manual</Placement>
+		</Command>
+		<Command name="CommonCommand.БотОфисМенеджер">
+			<CommandGroup>NavigationPanelOrdinary</CommandGroup>
+			<Placement>Manual</Placement>
+		</Command>
+		<Command name="0:96ef0e75-a210-425d-86d1-beb68cdcf5b1">
+			<CommandGroup>CommandGroup.Информация</CommandGroup>
+			<Placement>Manual</Placement>
+		</Command>
+	</CommandsPlacement>
+	<CommandsOrder>
+		<Command name="0:465028ef-ab50-4508-b3ba-c29202551673">
+			<CommandGroup>NavigationPanelOrdinary</CommandGroup>
+		</Command>
+		<Command name="0:40cc851d-f17c-4c55-bdf9-7f515d434425">
+			<CommandGroup>NavigationPanelOrdinary</CommandGroup>
+		</Command>
+		<Command name="0:e718af75-1653-4321-aa29-30ac89cada0a">
+			<CommandGroup>NavigationPanelOrdinary</CommandGroup>
+		</Command>
+		<Command name="0:5a77ed34-389a-45e7-85f4-1a2a7b95fd80">
+			<CommandGroup>NavigationPanelOrdinary</CommandGroup>
+		</Command>
+		<Command name="0:0999ef48-b136-42b4-bb78-076511dac107">
+			<CommandGroup>NavigationPanelOrdinary</CommandGroup>
+		</Command>
+		<Command name="0:677e13a7-d382-4862-a616-2c845e6fd734">
+			<CommandGroup>NavigationPanelOrdinary</CommandGroup>
+		</Command>
+		<Command name="CommonCommand.БотОфисМенеджер">
+			<CommandGroup>NavigationPanelOrdinary</CommandGroup>
+		</Command>
+	</CommandsOrder>
+	<GroupsOrder>
+		<Group>NavigationPanelOrdinary</Group>
+	</GroupsOrder>
+</CommandInterface>

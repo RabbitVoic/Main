@@ -1,0 +1,502 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.15">
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+	<ChildItems>
+		<Pages name="Группа1" id="40">
+			<ExtendedTooltip name="Группа1РасширеннаяПодсказка" id="41"/>
+			<ChildItems>
+				<Page name="Группа2" id="42">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Просроченные акты</v8:content>
+						</v8:item>
+					</Title>
+					<ExtendedTooltip name="Группа2РасширеннаяПодсказка" id="43"/>
+					<ChildItems>
+						<Table name="СрокПросрочен" id="1">
+							<UseAlternationRowColor>true</UseAlternationRowColor>
+							<EnableStartDrag>true</EnableStartDrag>
+							<DataPath>СрокПросрочен</DataPath>
+							<RowPictureDataPath>~СрокПросрочен.DefaultPicture</RowPictureDataPath>
+							<AutoRefresh>false</AutoRefresh>
+							<AutoRefreshPeriod>60</AutoRefreshPeriod>
+							<Period>
+								<v8:variant xsi:type="v8:StandardPeriodVariant">Custom</v8:variant>
+								<v8:startDate>0001-01-01T00:00:00</v8:startDate>
+								<v8:endDate>0001-01-01T00:00:00</v8:endDate>
+							</Period>
+							<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
+							<RestoreCurrentRow>false</RestoreCurrentRow>
+							<TopLevelParent xsi:nil="true"/>
+							<ShowRoot>true</ShowRoot>
+							<AllowRootChoice>false</AllowRootChoice>
+							<UpdateOnDataChange>Auto</UpdateOnDataChange>
+							<AllowGettingCurrentRowURL>true</AllowGettingCurrentRowURL>
+							<ContextMenu name="СрокПросроченКонтекстноеМеню" id="2"/>
+							<AutoCommandBar name="СрокПросроченКоманднаяПанель" id="3">
+								<ChildItems>
+									<Button name="СрокПросроченОбновить" id="38">
+										<Type>CommandBarButton</Type>
+										<CommandName>Form.Command.Обновить</CommandName>
+										<ExtendedTooltip name="СрокПросроченОбновитьРасширеннаяПодсказка" id="39"/>
+									</Button>
+									<Button name="СрокПросроченСоздатьПисьмо" id="71">
+										<Type>CommandBarButton</Type>
+										<CommandName>Form.Command.СоздатьПисьмо</CommandName>
+										<ExtendedTooltip name="СрокПросроченСоздатьПисьмоРасширеннаяПодсказка" id="72"/>
+									</Button>
+								</ChildItems>
+							</AutoCommandBar>
+							<ExtendedTooltip name="СрокПросроченРасширеннаяПодсказка" id="4"/>
+							<SearchStringAddition name="СрокПросроченСтрокаПоиска" id="5">
+								<AdditionSource>
+									<Item>СрокПросрочен</Item>
+									<Type>SearchStringRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="СрокПросроченСтрокаПоискаКонтекстноеМеню" id="6"/>
+								<ExtendedTooltip name="СрокПросроченСтрокаПоискаРасширеннаяПодсказка" id="7"/>
+							</SearchStringAddition>
+							<ViewStatusAddition name="СрокПросроченСостояниеПросмотра" id="8">
+								<AdditionSource>
+									<Item>СрокПросрочен</Item>
+									<Type>ViewStatusRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="СрокПросроченСостояниеПросмотраКонтекстноеМеню" id="9"/>
+								<ExtendedTooltip name="СрокПросроченСостояниеПросмотраРасширеннаяПодсказка" id="10"/>
+							</ViewStatusAddition>
+							<SearchControlAddition name="СрокПросроченУправлениеПоиском" id="11">
+								<AdditionSource>
+									<Item>СрокПросрочен</Item>
+									<Type>SearchControl</Type>
+								</AdditionSource>
+								<ContextMenu name="СрокПросроченУправлениеПоискомКонтекстноеМеню" id="12"/>
+								<ExtendedTooltip name="СрокПросроченУправлениеПоискомРасширеннаяПодсказка" id="13"/>
+							</SearchControlAddition>
+							<ChildItems>
+								<LabelField name="СрокПросроченАктПередачи" id="14">
+									<DataPath>СрокПросрочен.АктПередачи</DataPath>
+									<ContextMenu name="СрокПросроченАктПередачиКонтекстноеМеню" id="15"/>
+									<ExtendedTooltip name="СрокПросроченАктПередачиРасширеннаяПодсказка" id="16"/>
+								</LabelField>
+								<LabelField name="СрокПросроченДатаПередачи" id="20">
+									<DataPath>СрокПросрочен.ДатаПередачи</DataPath>
+									<ContextMenu name="СрокПросроченДатаПередачиКонтекстноеМеню" id="21"/>
+									<ExtendedTooltip name="СрокПросроченДатаПередачиРасширеннаяПодсказка" id="22"/>
+								</LabelField>
+								<LabelField name="СрокПросроченДатаВозврата" id="17">
+									<DataPath>СрокПросрочен.ДатаВозврата</DataPath>
+									<ContextMenu name="СрокПросроченДатаВозвратаКонтекстноеМеню" id="18"/>
+									<ExtendedTooltip name="СрокПросроченДатаВозвратаРасширеннаяПодсказка" id="19"/>
+								</LabelField>
+								<LabelField name="СрокПросроченОстатокДней" id="29">
+									<DataPath>СрокПросрочен.ОстатокДней</DataPath>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Просрочено дней</v8:content>
+										</v8:item>
+									</Title>
+									<ContextMenu name="СрокПросроченОстатокДнейКонтекстноеМеню" id="30"/>
+									<ExtendedTooltip name="СрокПросроченОстатокДнейРасширеннаяПодсказка" id="31"/>
+								</LabelField>
+								<LabelField name="СрокПросроченДоговор" id="23">
+									<DataPath>СрокПросрочен.Договор</DataPath>
+									<ContextMenu name="СрокПросроченДоговорКонтекстноеМеню" id="24"/>
+									<ExtendedTooltip name="СрокПросроченДоговорРасширеннаяПодсказка" id="25"/>
+								</LabelField>
+								<LabelField name="СрокПросроченКонтрагент" id="26">
+									<DataPath>СрокПросрочен.Контрагент</DataPath>
+									<ContextMenu name="СрокПросроченКонтрагентКонтекстноеМеню" id="27"/>
+									<ExtendedTooltip name="СрокПросроченКонтрагентРасширеннаяПодсказка" id="28"/>
+								</LabelField>
+								<LabelField name="СрокПросроченТелефон" id="32">
+									<DataPath>СрокПросрочен.Телефон</DataPath>
+									<ContextMenu name="СрокПросроченТелефонКонтекстноеМеню" id="33"/>
+									<ExtendedTooltip name="СрокПросроченТелефонРасширеннаяПодсказка" id="34"/>
+								</LabelField>
+								<LabelField name="СрокПросроченЭлектроннаяПочта" id="35">
+									<DataPath>СрокПросрочен.ЭлектроннаяПочта</DataPath>
+									<ContextMenu name="СрокПросроченЭлектроннаяПочтаКонтекстноеМеню" id="36"/>
+									<ExtendedTooltip name="СрокПросроченЭлектроннаяПочтаРасширеннаяПодсказка" id="37"/>
+								</LabelField>
+							</ChildItems>
+						</Table>
+					</ChildItems>
+				</Page>
+				<Page name="Группа3" id="44">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Статусы писем</v8:content>
+						</v8:item>
+					</Title>
+					<ExtendedTooltip name="Группа3РасширеннаяПодсказка" id="45"/>
+					<ChildItems>
+						<Table name="ИнформацияПоПисьмам" id="46">
+							<UseAlternationRowColor>true</UseAlternationRowColor>
+							<EnableStartDrag>true</EnableStartDrag>
+							<DataPath>ИнформацияПоПисьмам</DataPath>
+							<RowPictureDataPath>~ИнформацияПоПисьмам.DefaultPicture</RowPictureDataPath>
+							<AutoRefresh>false</AutoRefresh>
+							<AutoRefreshPeriod>60</AutoRefreshPeriod>
+							<Period>
+								<v8:variant xsi:type="v8:StandardPeriodVariant">Custom</v8:variant>
+								<v8:startDate>0001-01-01T00:00:00</v8:startDate>
+								<v8:endDate>0001-01-01T00:00:00</v8:endDate>
+							</Period>
+							<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
+							<RestoreCurrentRow>false</RestoreCurrentRow>
+							<TopLevelParent xsi:nil="true"/>
+							<ShowRoot>true</ShowRoot>
+							<AllowRootChoice>false</AllowRootChoice>
+							<UpdateOnDataChange>Auto</UpdateOnDataChange>
+							<AllowGettingCurrentRowURL>true</AllowGettingCurrentRowURL>
+							<ContextMenu name="ИнформацияПоПисьмамКонтекстноеМеню" id="47"/>
+							<AutoCommandBar name="ИнформацияПоПисьмамКоманднаяПанель" id="48">
+								<ChildItems>
+									<Button name="ИнформацияПоПисьмамОбновитьПисьма" id="73">
+										<Type>CommandBarButton</Type>
+										<CommandName>Form.Command.ОбновитьПисьма</CommandName>
+										<Title>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Обновить</v8:content>
+											</v8:item>
+										</Title>
+										<ExtendedTooltip name="ИнформацияПоПисьмамОбновитьПисьмаРасширеннаяПодсказка" id="74"/>
+									</Button>
+								</ChildItems>
+							</AutoCommandBar>
+							<ExtendedTooltip name="ИнформацияПоПисьмамРасширеннаяПодсказка" id="49"/>
+							<SearchStringAddition name="ИнформацияПоПисьмамСтрокаПоиска" id="50">
+								<AdditionSource>
+									<Item>ИнформацияПоПисьмам</Item>
+									<Type>SearchStringRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="ИнформацияПоПисьмамСтрокаПоискаКонтекстноеМеню" id="51"/>
+								<ExtendedTooltip name="ИнформацияПоПисьмамСтрокаПоискаРасширеннаяПодсказка" id="52"/>
+							</SearchStringAddition>
+							<ViewStatusAddition name="ИнформацияПоПисьмамСостояниеПросмотра" id="53">
+								<AdditionSource>
+									<Item>ИнформацияПоПисьмам</Item>
+									<Type>ViewStatusRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="ИнформацияПоПисьмамСостояниеПросмотраКонтекстноеМеню" id="54"/>
+								<ExtendedTooltip name="ИнформацияПоПисьмамСостояниеПросмотраРасширеннаяПодсказка" id="55"/>
+							</ViewStatusAddition>
+							<SearchControlAddition name="ИнформацияПоПисьмамУправлениеПоиском" id="56">
+								<AdditionSource>
+									<Item>ИнформацияПоПисьмам</Item>
+									<Type>SearchControl</Type>
+								</AdditionSource>
+								<ContextMenu name="ИнформацияПоПисьмамУправлениеПоискомКонтекстноеМеню" id="57"/>
+								<ExtendedTooltip name="ИнформацияПоПисьмамУправлениеПоискомРасширеннаяПодсказка" id="58"/>
+							</SearchControlAddition>
+							<ChildItems>
+								<LabelField name="ИнформацияПоПисьмамКонтрагент" id="59">
+									<DataPath>ИнформацияПоПисьмам.Контрагент</DataPath>
+									<ContextMenu name="ИнформацияПоПисьмамКонтрагентКонтекстноеМеню" id="60"/>
+									<ExtendedTooltip name="ИнформацияПоПисьмамКонтрагентРасширеннаяПодсказка" id="61"/>
+								</LabelField>
+								<LabelField name="ИнформацияПоПисьмамОтветственный" id="62">
+									<DataPath>ИнформацияПоПисьмам.Ответственный</DataPath>
+									<ContextMenu name="ИнформацияПоПисьмамОтветственныйКонтекстноеМеню" id="63"/>
+									<ExtendedTooltip name="ИнформацияПоПисьмамОтветственныйРасширеннаяПодсказка" id="64"/>
+								</LabelField>
+								<LabelField name="ИнформацияПоПисьмамПисьмо" id="65">
+									<DataPath>ИнформацияПоПисьмам.Письмо</DataPath>
+									<ContextMenu name="ИнформацияПоПисьмамПисьмоКонтекстноеМеню" id="66"/>
+									<ExtendedTooltip name="ИнформацияПоПисьмамПисьмоРасширеннаяПодсказка" id="67"/>
+								</LabelField>
+								<LabelField name="ИнформацияПоПисьмамСтатус" id="68">
+									<DataPath>ИнформацияПоПисьмам.Статус</DataPath>
+									<ContextMenu name="ИнформацияПоПисьмамСтатусКонтекстноеМеню" id="69"/>
+									<ExtendedTooltip name="ИнформацияПоПисьмамСтатусРасширеннаяПодсказка" id="70"/>
+								</LabelField>
+							</ChildItems>
+						</Table>
+					</ChildItems>
+				</Page>
+			</ChildItems>
+		</Pages>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:DataProcessorObject.otus_ИнформацияОПродукции</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+		</Attribute>
+		<Attribute name="СрокПросрочен" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Срок просрочен</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:DynamicList</v8:Type>
+			</Type>
+			<Settings xsi:type="DynamicList">
+				<ManualQuery>true</ManualQuery>
+				<DynamicDataRead>false</DynamicDataRead>
+				<QueryText>ВЫБРАТЬ
+	otus_АктПередачиТовара.Ссылка КАК АктПередачи,
+	otus_АктПередачиТовара.Контрагент КАК Контрагент,
+	otus_АктПередачиТовара.Договор КАК Договор,
+	otus_АктПередачиТовара.ДатаПередачи КАК ДатаПередачи,
+	otus_АктПередачиТовара.ДатаВозврата КАК ДатаВозврата,
+	Контрагенты.Телефон КАК Телефон,
+	Контрагенты.ЭлектроннаяПочта КАК ЭлектроннаяПочта,
+	otus_АктПередачиТовара.Дата КАК ДатаАкта,
+	&amp;ТекущаяДата КАК ТекущаяДата,
+	otus_АктПередачиТовара.Статус КАК Статус
+ПОМЕСТИТЬ вт_Акт
+ИЗ
+	Документ.otus_АктПередачиТовара КАК otus_АктПередачиТовара
+		ЛЕВОЕ СОЕДИНЕНИЕ Справочник.Контрагенты КАК Контрагенты
+		ПО otus_АктПередачиТовара.Контрагент = Контрагенты.Ссылка
+ГДЕ
+	НЕ otus_АктПередачиТовара.Статус = ЗНАЧЕНИЕ(Перечисление.otus_СтатусАкта.НеВозвращено)
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ
+	вт_Акт.АктПередачи КАК АктПередачи,
+	вт_Акт.Контрагент КАК Контрагент,
+	вт_Акт.Договор КАК Договор,
+	вт_Акт.ДатаПередачи КАК ДатаПередачи,
+	вт_Акт.ДатаВозврата КАК ДатаВозврата,
+	вт_Акт.Телефон КАК Телефон,
+	вт_Акт.ЭлектроннаяПочта КАК ЭлектроннаяПочта,
+	вт_Акт.ТекущаяДата КАК ТекущаяДата,
+	РАЗНОСТЬДАТ(вт_Акт.ТекущаяДата,вт_Акт.ДатаВозврата, ДЕНЬ) КАК Разность,
+	вт_Акт.Статус КАК Статус
+ПОМЕСТИТЬ вт_Разность
+ИЗ
+	вт_Акт КАК вт_Акт
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ
+	вт_Разность.АктПередачи КАК АктПередачи,
+	вт_Разность.Контрагент КАК Контрагент,
+	вт_Разность.Договор КАК Договор,
+	вт_Разность.ДатаПередачи КАК ДатаПередачи,
+	вт_Разность.ДатаВозврата КАК ДатаВозврата,
+	вт_Разность.Телефон КАК Телефон,
+	вт_Разность.ЭлектроннаяПочта КАК ЭлектроннаяПочта,
+	вт_Разность.Разность КАК ОстатокДней
+ИЗ
+	вт_Разность КАК вт_Разность
+ГДЕ
+	вт_Разность.Разность &lt; 0</QueryText>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>АктПередачи</dcssch:dataPath>
+					<dcssch:field>АктПередачи</dcssch:field>
+					<dcssch:title xsi:type="v8:LocalStringType">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Акт передачи</v8:content>
+						</v8:item>
+					</dcssch:title>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>ОстатокДней</dcssch:dataPath>
+					<dcssch:field>ОстатокДней</dcssch:field>
+					<dcssch:title xsi:type="v8:LocalStringType">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Остаток дней</v8:content>
+						</v8:item>
+					</dcssch:title>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>ДатаПередачи</dcssch:dataPath>
+					<dcssch:field>ДатаПередачи</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>Контрагент</dcssch:dataPath>
+					<dcssch:field>Контрагент</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>Договор</dcssch:dataPath>
+					<dcssch:field>Договор</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>ДатаВозврата</dcssch:dataPath>
+					<dcssch:field>ДатаВозврата</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>ЭлектроннаяПочта</dcssch:dataPath>
+					<dcssch:field>ЭлектроннаяПочта</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>Телефон</dcssch:dataPath>
+					<dcssch:field>Телефон</dcssch:field>
+				</Field>
+				<Parameter>
+					<dcssch:name>ТекущаяДата</dcssch:name>
+					<dcssch:title xsi:type="v8:LocalStringType">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Текущая дата</v8:content>
+						</v8:item>
+					</dcssch:title>
+					<dcssch:valueType>
+						<v8:Type>xs:dateTime</v8:Type>
+						<v8:DateQualifiers>
+							<v8:DateFractions>DateTime</v8:DateFractions>
+						</v8:DateQualifiers>
+					</dcssch:valueType>
+					<dcssch:value xsi:type="xs:dateTime">0001-01-01T00:00:00</dcssch:value>
+					<dcssch:useRestriction>true</dcssch:useRestriction>
+					<dcssch:expression>ТекущаяДата()</dcssch:expression>
+				</Parameter>
+				<ListSettings>
+					<dcsset:filter>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>dfcece9d-5077-440b-b6b3-45a5cb4538eb</dcsset:userSettingID>
+					</dcsset:filter>
+					<dcsset:dataParameters>
+						<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+							<dcscor:use>false</dcscor:use>
+							<dcscor:parameter>ТекущаяДата</dcscor:parameter>
+							<dcscor:value xsi:nil="true"/>
+						</dcscor:item>
+					</dcsset:dataParameters>
+					<dcsset:order>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>88619765-ccb3-46c6-ac52-38e9c992ebd4</dcsset:userSettingID>
+					</dcsset:order>
+					<dcsset:conditionalAppearance>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>b75fecce-942b-4aed-abc9-e6a02e460fb3</dcsset:userSettingID>
+					</dcsset:conditionalAppearance>
+					<dcsset:itemsViewMode>Normal</dcsset:itemsViewMode>
+					<dcsset:itemsUserSettingID>911b6018-f537-43e8-a417-da56b22f9aec</dcsset:itemsUserSettingID>
+				</ListSettings>
+			</Settings>
+		</Attribute>
+		<Attribute name="ИнформацияПоПисьмам" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Информация по письмам</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:DynamicList</v8:Type>
+			</Type>
+			<Settings xsi:type="DynamicList">
+				<ManualQuery>true</ManualQuery>
+				<DynamicDataRead>false</DynamicDataRead>
+				<QueryText>ВЫБРАТЬ
+	otus_СписокПисемСрезПоследних.Письмо КАК Письмо,
+	otus_СписокПисемСрезПоследних.Контрагент КАК Контрагент,
+	otus_СписокПисемСрезПоследних.Ответственный КАК Ответственный,
+	otus_СписокПисемСрезПоследних.Статус КАК Статус
+ИЗ
+	РегистрСведений.otus_СписокПисем.СрезПоследних КАК otus_СписокПисемСрезПоследних
+</QueryText>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>Письмо</dcssch:dataPath>
+					<dcssch:field>Письмо</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>Контрагент</dcssch:dataPath>
+					<dcssch:field>Контрагент</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>Статус</dcssch:dataPath>
+					<dcssch:field>Статус</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>Ответственный</dcssch:dataPath>
+					<dcssch:field>Ответственный</dcssch:field>
+				</Field>
+				<Parameter>
+					<dcssch:name>Период</dcssch:name>
+					<dcssch:title xsi:type="v8:LocalStringType">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Период</v8:content>
+						</v8:item>
+					</dcssch:title>
+					<dcssch:valueType>
+						<v8:Type>xs:dateTime</v8:Type>
+						<v8:DateQualifiers>
+							<v8:DateFractions>DateTime</v8:DateFractions>
+						</v8:DateQualifiers>
+					</dcssch:valueType>
+					<dcssch:value xsi:type="xs:dateTime">0001-01-01T00:00:00</dcssch:value>
+					<dcssch:useRestriction>false</dcssch:useRestriction>
+				</Parameter>
+				<ListSettings>
+					<dcsset:filter>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>dfcece9d-5077-440b-b6b3-45a5cb4538eb</dcsset:userSettingID>
+					</dcsset:filter>
+					<dcsset:order>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>88619765-ccb3-46c6-ac52-38e9c992ebd4</dcsset:userSettingID>
+					</dcsset:order>
+					<dcsset:conditionalAppearance>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>b75fecce-942b-4aed-abc9-e6a02e460fb3</dcsset:userSettingID>
+					</dcsset:conditionalAppearance>
+					<dcsset:itemsViewMode>Normal</dcsset:itemsViewMode>
+					<dcsset:itemsUserSettingID>911b6018-f537-43e8-a417-da56b22f9aec</dcsset:itemsUserSettingID>
+				</ListSettings>
+			</Settings>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="Обновить" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Обновить</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Обновить</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>Обновить</Action>
+		</Command>
+		<Command name="СоздатьПисьмо" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Создать письмо</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Создать письмо</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>СоздатьПисьмо</Action>
+		</Command>
+		<Command name="ОбновитьПисьма" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Обновить письма</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Обновить письма</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ОбновитьПисьма</Action>
+		</Command>
+	</Commands>
+</Form>
